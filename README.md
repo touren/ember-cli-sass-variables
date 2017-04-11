@@ -73,4 +73,5 @@ And the Equivalent in javascript would be:
 The addon will watch to see if the variables file has changed and automatically update the javascript file with the correct information.
 
 Inspiration and some code from https://github.com/nordnet/sass-variable-loader
+
 Inspiration and some code from: http://blog.stevenlevithan.com/archives/javascript-match-nested
