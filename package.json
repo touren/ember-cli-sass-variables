@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-sass-variables",
+  "name": "ember-cli-sass-variables-ex",
   "version": "1.0.3",
   "description": "Access your SASS variables from your Ember app to keep things like style guides up to date.",
   "directories": {
@@ -11,12 +11,13 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "https://github.com/davidpett/ember-cli-sass-variables",
-  "bugs": "https://github.com/davidpett/ember-cli-sass-variables/issues",
-  "homepage": "http://davidpett.github.io/ember-cli-sass-variables/",
+  "repository": "https://github.com/touren/ember-cli-sass-variables",
+  "bugs": "https://github.com/touren/ember-cli-sass-variables/issues",
+  "homepage": "http://touren.github.io/ember-cli-sass-variables/",
   "engines": {
     "node": ">= 0.12.0"
   },
+  "author": "Tao Ren",
   "author": "David Pett",
   "license": "MIT",
   "devDependencies": {
@@ -50,7 +51,8 @@
     "ember-addon",
     "ember-cli",
     "sass",
-    "sass-variables"
+    "sass-variables",
+    "sass-variables-ex"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.7",
@@ -60,6 +62,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://davidpett.github.io/ember-cli-sass-variables/"
+    "demoURL": "http://touren.github.io/ember-cli-sass-variables/"
   }
 }

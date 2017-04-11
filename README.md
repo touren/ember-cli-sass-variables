@@ -1,14 +1,15 @@
-[![Build Status](https://travis-ci.org/davidpett/ember-cli-sass-variables.svg?branch=master)](https://travis-ci.org/davidpett/ember-cli-sass-variables)
-[![npm version](https://badge.fury.io/js/ember-cli-sass-variables.svg)](https://badge.fury.io/js/ember-cli-sass-variables)
-[![Ember Observer Score](http://emberobserver.com/badges/ember-cli-sass-variables.svg)](http://emberobserver.com/addons/ember-cli-sass-variables)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-# ember-cli-sass-variables
+# ember-cli-sass-variables-ex
+Forked from https://github.com/davidpett/ember-cli-sass-variables
 
 Access your SASS variables from your Ember app to keep things like style guides up to date.
 
+* Support multiline variable declaration.
+
+* Support [lists variable](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#lists).
+
 ## Install
 
-Simply run `ember install ember-cli-sass-variables`. If you don't already have `ember-cli-sass` installed, this will do it for you.
+Simply run `ember install ember-cli-sass-variables-ex`. If you don't already have `ember-cli-sass` installed, this will do it for you.
 
 ## Configure
 
@@ -43,6 +44,10 @@ The Array contains objects with key/value pairs. In your SASS file, you might ha
 $color-red: #FF4136;
 $color-blue: #357EDD;
 $font-serif: 'Scope One', serif;
+$font-list: (
+  (red, 32px),
+  (black, 16px)
+);
 ```
 
 And the Equivalent in javascript would be:
@@ -57,7 +62,11 @@ And the Equivalent in javascript would be:
   }, {
     key: 'fontSerif',
     value: '"Scope One", serif'
+  }, {
+    key: 'fontList',
+    value: [['red', '32px'],['black','16px']]
   }
+
 ]
 ```
 
